@@ -308,7 +308,7 @@ code {
     padding: 10px 10px 10px 10px;
     -webkit-border-radius: 0px 0px 4px 4px;
     border-radius: 0px 0px 4px 4px;
-    overflow-x: scroll;
+    overflow-x: auto;
     line-height: 1.25;
 }
 .content .js.es5 .code {
