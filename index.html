@@ -26,7 +26,7 @@
             TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
             SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         -->
-        <title>ECMAScript 6: Visão geral e comparação com a ES5</title>
+        <title>ECMAScript 6: Visão geral e comparação com a ECMAScript 5</title>
         <script src="lib/jquery/jquery.js" type="text/javascript"></script>
         <script src="lib/director/director.js" type="text/javascript"></script>
         <script src="lib/mousetrap/mousetrap.js" type="text/javascript"></script>
@@ -53,7 +53,7 @@
         </script>
         <div class="bg">ES6</div>
         <div class="head">
-            <span class="bold">ECMAScript 6</span> &mdash; Visão geral e comparação com ES5
+            <span class="bold">ECMAScript 6</span> &mdash; Visão geral e comparação com a ECMAScript 5
         </div>
         <div class="slogan">
             Veja quão clara e concisa a linguagem JavaScript <br/>
@@ -67,20 +67,19 @@
         </div>
 
         <div class="nav">
-            <!-- ATTENTION: BEGIN OF GENERATED CODE. DO NOT EDIT MANUALLY -->
             <ul>
-<li class="title">Constants
+<li class="title">Constantes
     <ul>
 <li class="subtitle subtitle_Constants">
-    <a href="#Constants">Constants</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#Constants">Constantes</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Scoping
+<li class="title">Scopo
     <ul>
 <li class="subtitle subtitle_BlockScopedVariables">
-    <a href="#BlockScopedVariables">Block-Scoped Variables</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#BlockScopedVariables">Variáveis Block-Scoped</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_BlockScopedFunctions">
-    <a href="#BlockScopedFunctions">Block-Scoped Functions</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#BlockScopedFunctions">Funções Block-Scoped </a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 <li class="title">Arrow Functions
@@ -257,33 +256,28 @@
     <a href="#Reflection">Reflection</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Internationalization & Localization
+<li class="title">Internacionalizaçãoi e Localização
     <ul>
 <li class="subtitle subtitle_Collation">
     <a href="#Collation">Collation</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_NumberFormatting">
-    <a href="#NumberFormatting">Number Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#NumberFormatting">Formatação de números</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_CurrencyFormatting">
-    <a href="#CurrencyFormatting">Currency Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#CurrencyFormatting">Formatação de moeda</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_DateTimeFormatting">
-    <a href="#DateTimeFormatting">Date/Time Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#DateTimeFormatting">Formatação de data/hora</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 </ul>
-
-            <!-- ATTENTION: END OF GENERATED CODE. DO NOT EDIT MANUALLY -->
         </div>
         <div class="content">
-            <!-- ATTENTION: BEGIN OF GENERATED CODE. DO NOT EDIT MANUALLY -->
-            <div id="Constants" class="showcase showcase_Constants">    <div class="title">Constants</div>
-    <div class="subtitle">Constants</div>
-    <div class="desc">Support for constants (also known as "immutable variables"), i.e.,
-variables which cannot be re-assigned new content. Notice: this only
-makes the variable itself immutable, not its assigned content (for
-instance, in case the content is an object, this means the object itself
-can still be altered).</div>
+
+            <div id="Constants" class="showcase showcase_Constants">    <div class="title">Constantes</div>
+    <div class="subtitle">Constantes</div>
+    <div class="desc">Suporte para constantes, também conhecidas como"immutable variables" (variáveis imutáveis ), ou seja, variáveis que não podem ser redefinidas. Notar que esta funcionalidade cria uma váriavel imutável, mas o conteúdo da variável em si pode ser alterado. Exemplo: se a variável for um objeto, ele, objeto não poderá ser alterado, mas o conteúdo do objeto poderá. 
+</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">const</span> PI</span><span class="punctuation"> = </span><span class="literal">3</span><span class="punctuation">.</span><span class="literal">141593</span><span class="semi">;</span>
 PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span class="punctuation">.</span><span class="literal">0</span><span class="semi">;</span>
 </div>
@@ -291,7 +285,7 @@ PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span cla
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  only <span class="keyword">in</span> ES<span class="literal">5</span> through the help <span class="keyword">of</span> object properties</span><span class="comment">
 //  and only <span class="keyword">in</span> global context and not <span class="keyword">in</span> a block scope</span>
 Object<span class="punctuation">.</span><span class="mark">defineProperty</span><span class="punctuation">(</span>typeof global <span class="punctuation">===</span> <span class="literal">"object"</span> ? global : window<span class="punctuation">,</span> <span class="literal">"<span class="mark">PI</span>"</span><span class="punctuation">,</span> <span class="punctuation">{</span>
@@ -309,7 +303,7 @@ PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span cla
     <div class="subtitle">Block-Scoped Variables</div>
     <div class="desc">Block-scoped variables (and constants) without hoisting.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">for</span> <span class="punctuation">(</span><span class="mark"><span class="keyword">let</span> i</span><span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> a<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark"><span class="keyword">let</span> x</span><span class="punctuation"> = </span>a<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="semi">;</span>
     <span class="ellipsis">&hellip;</span>
@@ -331,7 +325,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">var</span> i<span class="punctuation">,</span> x<span class="punctuation">,</span> y</span><span class="semi">;</span>
 <span class="keyword">for</span> <span class="punctuation">(</span>i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> a<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     x<span class="punctuation"> = </span>a<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="semi">;</span>
@@ -359,7 +353,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
     <div class="subtitle">Block-Scoped Functions</div>
     <div class="desc">Block-scoped function definitions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="punctuation">{</span>
     <span class="keyword">function</span> foo <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span> <span class="literal">1</span><span class="semi">;</span> <span class="punctuation">}</span>
     foo<span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">1</span><span class="semi">;</span>
@@ -374,7 +368,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  only <span class="keyword">in</span> ES<span class="literal">5</span> with the help <span class="keyword">of</span> block<span class="punctuation">-</span>scope emulating</span><span class="comment">
 //  <span class="keyword">function</span> scopes and <span class="keyword">function</span> expressions</span>
 <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -394,7 +388,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
     <div class="subtitle">Expression Bodies</div>
     <div class="desc">More expressive closure syntax.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">odds <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span></span> v <span class="punctuation">+</span> <span class="literal">1</span><span class="punctuation">)</span><span class="semi">;</span>
 pairs<span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span> <span class="punctuation">(</span></span><span class="punctuation">{</span> even: v<span class="punctuation">,</span> odd: v <span class="punctuation">+</span> <span class="literal">1</span> <span class="punctuation">}</span><span class="mark"><span class="punctuation">)</span></span><span class="punctuation">)</span><span class="semi">;</span>
 nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark"><span class="punctuation">(</span>v<span class="punctuation">,</span> i<span class="punctuation">)</span> <span class="punctuation">=&gt;</span></span> v <span class="punctuation">+</span> i<span class="punctuation">)</span><span class="semi">;</span>
@@ -403,7 +397,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">odds <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span></span> v <span class="punctuation">+</span> <span class="literal">1</span><span class="semi">;</span> <span class="mark"><span class="punctuation">}</span></span><span class="punctuation">)</span><span class="semi">;</span>
 pairs<span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span></span> <span class="punctuation">{</span> even: v<span class="punctuation">,</span> odd: v <span class="punctuation">+</span> <span class="literal">1</span> <span class="punctuation">}</span><span class="semi">;</span> <span class="mark"><span class="punctuation">}</span></span><span class="punctuation">)</span><span class="semi">;</span>
 nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">,</span> i<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span></span> v <span class="punctuation">+</span> i<span class="semi">;</span> <span class="mark"><span class="punctuation">}</span></span><span class="punctuation">)</span><span class="semi">;</span></div>
@@ -415,7 +409,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <div class="subtitle">Statement Bodies</div>
     <div class="desc">More expressive closure syntax.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span> <span class="punctuation">{</span></span>
    <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
        fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
@@ -425,7 +419,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">{</span></span>
    <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
        fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
@@ -438,7 +432,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <div class="subtitle">Lexical <code>this</code></div>
     <div class="desc">More intuitive handling of current object context.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">=&gt;</span></span> <span class="punctuation">{</span>
     <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
         <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
@@ -448,7 +442,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  variant <span class="literal">1</span></span>
 <span class="keyword">var</span> <span class="mark">self</span><span class="punctuation"> = </span><span class="mark"><span class="keyword">this</span></span><span class="semi">;</span>
 <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span></span> <span class="punctuation">{</span>
@@ -475,7 +469,7 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
     <div class="subtitle">Default Parameter Values</div>
     <div class="desc">Simple and intuitive default values for function parameters.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y <span class="mark">= <span class="literal">7</span></span><span class="punctuation">,</span> z <span class="mark">= <span class="literal">42</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> x <span class="punctuation">+</span> y <span class="punctuation">+</span> z<span class="semi">;</span>
 <span class="punctuation">}</span>
@@ -485,7 +479,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> z<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark"><span class="keyword">if</span> <span class="punctuation">(</span>y <span class="punctuation">===</span> undefined<span class="punctuation">)</span></span>
         <span class="mark">y<span class="punctuation"> = </span><span class="literal">7</span></span><span class="semi">;</span>
@@ -502,7 +496,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <div class="subtitle">Rest Parameter</div>
     <div class="desc">Aggregation of remaining arguments into single parameter of variadic functions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>a</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="punctuation">(</span>x <span class="punctuation">+</span> y<span class="punctuation">)</span> <span class="punctuation">*</span> a<span class="punctuation">.</span>length<span class="semi">;</span>
 <span class="punctuation">}</span>
@@ -512,7 +506,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark"><span class="keyword">var</span> a<span class="punctuation"> = </span>Array<span class="punctuation">.</span>prototype<span class="punctuation">.</span>slice<span class="punctuation">.</span>call<span class="punctuation">(</span>arguments<span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span></span><span class="semi">;</span>
     <span class="keyword">return</span> <span class="punctuation">(</span>x <span class="punctuation">+</span> y<span class="punctuation">)</span> <span class="punctuation">*</span> a<span class="punctuation">.</span>length<span class="semi">;</span>
@@ -527,7 +521,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <div class="desc">Spreading of elements of an iterable collection (like an array or even
 a string) into both literal elements and individual function parameters.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> params<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">"hello"</span><span class="punctuation">,</span> true<span class="punctuation">,</span> <span class="literal">7</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> other<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params</span> <span class="punctuation">]</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">"hello"</span><span class="punctuation">,</span> true<span class="punctuation">,</span> <span class="literal">7</span> <span class="punctuation">]</span></span>
 f<span class="punctuation">(</span><span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">9</span><span class="semi">;</span>
@@ -539,7 +533,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> params<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">"hello"</span><span class="punctuation">,</span> true<span class="punctuation">,</span> <span class="literal">7</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> other<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span> <span class="punctuation">]</span><span class="punctuation">.</span><span class="mark">concat<span class="punctuation">(</span>params<span class="punctuation">)</span></span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">"hello"</span><span class="punctuation">,</span> true<span class="punctuation">,</span> <span class="literal">7</span> <span class="punctuation">]</span></span>
 f<span class="mark"><span class="punctuation">.</span>apply</span><span class="punctuation">(</span><span class="mark">undefined<span class="punctuation">,</span> <span class="punctuation">[</span></span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span> <span class="mark"><span class="punctuation">]</span><span class="punctuation">.</span>concat<span class="punctuation">(</span>params<span class="punctuation">)</span></span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">9</span><span class="semi">;</span>
@@ -556,7 +550,7 @@ f<span class="mark"><span class="punctuation">.</span>apply</span><span class="p
 (Notice: don't be confused, Template Literals were originally named
 "Template Strings" in the drafts of the ECMAScript 6 language specification)</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> customer<span class="punctuation"> = </span><span class="punctuation">{</span> name: <span class="literal">"Foo"</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> card<span class="punctuation"> = </span><span class="punctuation">{</span> amount: <span class="literal">7</span><span class="punctuation">,</span> product: <span class="literal">"Bar"</span><span class="punctuation">,</span> unitprice: <span class="literal">42</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> message<span class="punctuation"> = </span><span class="mark"><span class="literal">`</span>Hello <span class="mark">$<span class="punctuation">{</span>customer<span class="punctuation">.</span>name<span class="punctuation">}</span></span><span class="punctuation">,</span>
@@ -567,7 +561,7 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> customer<span class="punctuation"> = </span><span class="punctuation">{</span> name: <span class="literal">"Foo"</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> card<span class="punctuation"> = </span><span class="punctuation">{</span> amount: <span class="literal">7</span><span class="punctuation">,</span> product: <span class="literal">"Bar"</span><span class="punctuation">,</span> unitprice: <span class="literal">42</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> message<span class="punctuation"> = </span><span class="mark"><span class="literal">"</span>Hello "</span><span class="mark"> <span class="punctuation">+</span> customer<span class="punctuation">.</span>name <span class="punctuation">+</span> </span><span class="literal">"<span class="punctuation">,</span>\n"</span> <span class="punctuation">+</span>
@@ -581,14 +575,14 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <div class="subtitle">Custom Interpolation</div>
     <div class="desc">Flexible expression interpolation for arbitrary methods.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">get<span class="mark"><span class="literal">`</span>http://example<span class="punctuation">.</span>com/foo?bar=<span class="mark">$<span class="punctuation">{</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">}</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span>quux=<span class="mark">$<span class="punctuation">{</span></span>quux<span class="mark"><span class="punctuation">}</span>`</span></span><span class="semi">;</span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">get<span class="mark"><span class="punctuation">(</span><span class="punctuation">[</span> </span><span class="literal">"http://example<span class="punctuation">.</span>com/foo?bar="</span><span class="mark"><span class="punctuation">,</span></span> <span class="literal">"<span class="punctuation"><span class="punctuation">&amp;</span></span>quux="</span><span class="mark"><span class="punctuation">,</span></span> <span class="literal">""</span><span class="mark"> <span class="punctuation">]</span><span class="punctuation">,</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">,</span></span> quux<span class="mark"><span class="punctuation">)</span></span><span class="semi">;</span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -598,7 +592,7 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <div class="subtitle">Raw String Access</div>
     <div class="desc">Access the raw template string content (backslashes are not interpreted).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> quux <span class="punctuation">(</span>strings<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>values<span class="punctuation">)</span> <span class="punctuation">{</span>
     strings<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"<span class="mark">foo\n</span>"</span><span class="semi">;</span>
     strings<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"bar"</span><span class="semi">;</span>
@@ -614,7 +608,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -624,7 +618,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <div class="subtitle">Binary & Octal Literal</div>
     <div class="desc">Direct support for safe binary and octal literals.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="literal">0</span>b</span><span class="literal">111110111</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 <span class="mark"><span class="literal">0</span>o</span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 </div>
@@ -632,7 +626,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"111110111"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 <span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"767"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">8</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 <span class="mark"><span class="literal">0</span></span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span><span class="comment"> // only <span class="keyword">in</span> non<span class="punctuation">-</span>strict<span class="punctuation">,</span> backward compatibility mode</span></div>
@@ -644,7 +638,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <div class="subtitle">Unicode String & RegExp Literal</div>
     <div class="desc">Extended support using Unicode within strings and regular expressions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
 <span class="literal">"𠮷"</span><span class="punctuation">.</span>match<span class="punctuation">(</span>/<span class="punctuation">.</span>/<span class="mark">u</span><span class="punctuation">)</span><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
 <span class="literal">"𠮷"</span> <span class="punctuation">===</span> <span class="literal">"\uD842\uDFB7"</span><span class="semi">;</span>
@@ -657,7 +651,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
 <span class="literal">"𠮷"</span><span class="punctuation">.</span>match<span class="punctuation">(</span>/<span class="punctuation">(</span>?:<span class="punctuation">[</span>\<span class="literal">0</span><span class="punctuation">-</span>\t\x<span class="literal">0</span>B\f\x<span class="literal">0</span>E<span class="punctuation">-</span>\u<span class="literal">2027</span>\u<span class="literal">202</span>A<span class="punctuation">-</span>\uD<span class="literal">7</span>FF\uE<span class="literal">000</span><span class="punctuation">-</span>\uFFFF<span class="punctuation">]</span><span class="mark"><span class="punctuation">[</span>\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span><span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span></span><span class="punctuation">[</span>\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span><span class="punctuation">(</span>?!<span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span><span class="punctuation">)</span><span class="mark"><span class="punctuation">(</span>?:<span class="punctuation">[</span>^\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span></span>^<span class="punctuation">)</span><span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span><span class="punctuation">)</span>/<span class="punctuation">)</span><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
 <span class="literal">"𠮷"</span> <span class="punctuation">===</span> <span class="literal">"\uD842\uDFB7"</span><span class="semi">;</span><span class="comment">
@@ -674,7 +668,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
 this way support efficient parsing of arbitrary long input strings,
 even with an arbitrary number of distinct regular expressions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> parser<span class="punctuation"> = </span><span class="punctuation">(</span>input<span class="punctuation">,</span> match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
     <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> pos<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> lastPos<span class="punctuation"> = </span>input<span class="punctuation">.</span>length<span class="punctuation">;</span> <span class="mark">pos <span class="punctuation">&lt;</span> lastPos</span><span class="punctuation">;</span> <span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> match<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -703,7 +697,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> parser<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>input<span class="punctuation">,</span> match<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">var</span> i<span class="punctuation">,</span> found<span class="punctuation">,</span> <span class="mark">inputTmp<span class="punctuation"> = </span>input</span><span class="punctuation">;</span> <span class="mark">inputTmp !== <span class="literal">""</span></span><span class="punctuation">;</span> <span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">for</span> <span class="punctuation">(</span>i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> match<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -733,14 +727,14 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <div class="subtitle">Property Shorthand</div>
     <div class="desc">Shorter syntax for common object property definition idiom.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span> <span class="mark">x</span><span class="punctuation">,</span> <span class="mark">y</span> <span class="punctuation">}</span><span class="semi">;</span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span> <span class="mark">x: x</span><span class="punctuation">,</span> <span class="mark">y: y</span> <span class="punctuation">}</span><span class="semi">;</span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -750,7 +744,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <div class="subtitle">Computed Property Names</div>
     <div class="desc">Support for computed names in object property definitions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span>
     foo: <span class="literal">"bar"</span><span class="punctuation">,</span>
     <span class="mark"><span class="punctuation">[</span></span> <span class="literal">"baz"</span> <span class="punctuation">+</span> quux<span class="punctuation">(</span><span class="punctuation">)</span> <span class="mark"><span class="punctuation">]</span>:</span> <span class="literal">42</span>
@@ -760,7 +754,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span>
     foo: <span class="literal">"bar"</span>
 <span class="punctuation">}</span><span class="semi">;</span>
@@ -774,7 +768,7 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <div class="desc">Support for method notation in object property definitions,
 for both regular functions and generator functions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span>
     <span class="mark">foo <span class="punctuation">(</span>a<span class="punctuation">,</span> b<span class="punctuation">)</span></span> <span class="punctuation">{</span>
         <span class="ellipsis">&hellip;</span>
@@ -791,7 +785,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">obj<span class="punctuation"> = </span><span class="punctuation">{</span>
     foo<span class="mark">: <span class="keyword">function</span></span> <span class="punctuation">(</span>a<span class="punctuation">,</span> b<span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="ellipsis">&hellip;</span>
@@ -810,7 +804,7 @@ for both regular functions and generator functions.</div>
     <div class="subtitle">Array Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays into individual variables during assignment.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">3</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark"><span class="punctuation">[</span> a<span class="punctuation">,</span> <span class="punctuation">,</span> b <span class="punctuation">]</span><span class="punctuation"> = </span>list</span><span class="semi">;</span>
 <span class="punctuation">[</span> <span class="mark">b<span class="punctuation">,</span> a</span> <span class="punctuation">]</span><span class="punctuation"> = </span><span class="punctuation">[</span> <span class="mark">a<span class="punctuation">,</span> b</span> <span class="punctuation">]</span><span class="semi">;</span>
@@ -819,7 +813,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">3</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark">a<span class="punctuation"> = </span>list<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span></span><span class="punctuation">,</span> <span class="mark">b<span class="punctuation"> = </span>list<span class="punctuation">[</span><span class="literal">2</span><span class="punctuation">]</span></span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark">tmp<span class="punctuation"> = </span>a</span><span class="punctuation">;</span> <span class="mark">a<span class="punctuation"> = </span>b</span><span class="punctuation">;</span> <span class="mark">b<span class="punctuation"> = </span>tmp</span><span class="semi">;</span></div>
@@ -831,14 +825,14 @@ for both regular functions and generator functions.</div>
     <div class="subtitle">Object Matching, Shorthand Notation</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark"><span class="punctuation">{</span> op<span class="punctuation">,</span> lhs<span class="punctuation">,</span> rhs <span class="punctuation">}</span></span><span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark">tmp</span><span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark">op <span class="punctuation"> = </span>tmp<span class="punctuation">.</span>op</span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark">lhs<span class="punctuation"> = </span>tmp<span class="punctuation">.</span>lhs</span><span class="semi">;</span>
@@ -851,14 +845,14 @@ for both regular functions and generator functions.</div>
     <div class="subtitle">Object Matching, Deep Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="punctuation">{</span> op: a<span class="punctuation">,</span> <span class="mark">lhs: <span class="punctuation">{</span> op: b <span class="punctuation">}</span></span><span class="punctuation">,</span> rhs: c <span class="punctuation">}</span><span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> tmp<span class="punctuation"> = </span>getASTNode<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> a<span class="punctuation"> = </span>tmp<span class="punctuation">.</span>op<span class="semi">;</span>
 <span class="keyword">var</span> <span class="mark">b<span class="punctuation"> = </span>tmp<span class="punctuation">.</span>lhs<span class="punctuation">.</span>op</span><span class="semi">;</span>
@@ -871,7 +865,7 @@ for both regular functions and generator functions.</div>
     <div class="subtitle">Parameter Context Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays and Objects into individual parameters during function calls.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span><span class="mark"><span class="punctuation">[</span> name<span class="punctuation">,</span> val <span class="punctuation">]</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
     console<span class="punctuation">.</span>log<span class="punctuation">(</span>name<span class="punctuation">,</span> val<span class="punctuation">)</span><span class="semi">;</span>
 <span class="punctuation">}</span>
@@ -889,7 +883,7 @@ h<span class="punctuation">(</span><span class="punctuation">{</span> name: <spa
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span><span class="mark">arg</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark"><span class="keyword">var</span> name<span class="punctuation"> = </span>arg<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span></span><span class="semi">;</span>
     <span class="mark"><span class="keyword">var</span> val <span class="punctuation"> = </span>arg<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span></span><span class="semi">;</span>
@@ -916,7 +910,7 @@ h<span class="punctuation">(</span><span class="punctuation">{</span> name: <spa
     <div class="subtitle">Fail-Soft Destructuring</div>
     <div class="desc">Fail-soft destructuring, optionally with defaults.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">7</span><span class="punctuation">,</span> <span class="literal">42</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> <span class="punctuation">[</span> a<span class="punctuation"> = </span><span class="literal">1</span><span class="punctuation">,</span> b<span class="punctuation"> = </span><span class="literal">2</span><span class="punctuation">,</span> <span class="mark">c<span class="punctuation"> = </span><span class="literal">3</span></span><span class="punctuation">,</span> <span class="mark">d</span> <span class="punctuation">]</span><span class="punctuation"> = </span>list<span class="semi">;</span>
 a <span class="punctuation">===</span> <span class="literal">7</span><span class="semi">;</span>
@@ -928,7 +922,7 @@ d <span class="punctuation">===</span> <span class="mark">undefined</span><span 
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="literal">7</span><span class="punctuation">,</span> <span class="literal">42</span> <span class="punctuation">]</span><span class="semi">;</span>
 <span class="keyword">var</span> a<span class="punctuation"> = </span>typeof list<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> !== <span class="literal">"undefined"</span> ? list<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> : <span class="literal">1</span><span class="semi">;</span>
 <span class="keyword">var</span> b<span class="punctuation"> = </span>typeof list<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span> !== <span class="literal">"undefined"</span> ? list<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span> : <span class="literal">2</span><span class="semi">;</span>
@@ -946,7 +940,7 @@ d <span class="punctuation">===</span> <span class="mark">undefined</span><span 
     <div class="subtitle">Value Export/Import</div>
     <div class="desc">Support for exporting/importing values from/to modules without global namespace pollution.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  lib/math<span class="punctuation">.</span>js</span>
 <span class="mark"><span class="keyword">export</span></span> <span class="keyword">function</span> <span class="mark">sum</span> <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span> x <span class="punctuation">+</span> y <span class="punctuation">}</span><span class="semi">;</span>
 <span class="mark"><span class="keyword">export</span></span> <span class="keyword">var</span> <span class="mark">pi</span><span class="punctuation"> = </span><span class="literal">3</span><span class="punctuation">.</span><span class="literal">141593</span><span class="semi">;</span>
@@ -963,7 +957,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  lib/math<span class="punctuation">.</span>js</span>
 <span class="mark">LibMath<span class="punctuation"> = </span><span class="punctuation">{</span><span class="punctuation">}</span></span><span class="semi">;</span>
 <span class="mark">LibMath<span class="punctuation">.</span>sum</span><span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span> x <span class="punctuation">+</span> y <span class="punctuation">}</span><span class="semi">;</span>
@@ -984,7 +978,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <div class="subtitle">Default & Wildcard</div>
     <div class="desc">Marking a value as the default exported value and mass-mixin of values.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  lib/mathplusplus<span class="punctuation">.</span>js</span>
 <span class="mark"><span class="keyword">export</span> <span class="punctuation">*</span></span> from <span class="literal">"lib/math"</span><span class="semi">;</span>
 <span class="keyword">export</span> <span class="keyword">var</span> e<span class="punctuation"> = </span><span class="literal">2</span><span class="punctuation">.</span><span class="literal">71828182846</span><span class="semi">;</span>
@@ -998,7 +992,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  lib/mathplusplus<span class="punctuation">.</span>js</span>
 <span class="mark">LibMathPP<span class="punctuation"> = </span><span class="punctuation">{</span><span class="punctuation">}</span></span><span class="semi">;</span>
 <span class="mark"><span class="keyword">for</span> <span class="punctuation">(</span>symbol <span class="keyword">in</span> LibMath<span class="punctuation">)</span></span>
@@ -1018,7 +1012,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <div class="subtitle">Class Definition</div>
     <div class="desc">More intuitive, OOP-style and boilerplate-free classes.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">class</span></span> Shape <span class="punctuation">{</span>
     <span class="mark">constructor</span> <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">this</span><span class="punctuation">.</span>id<span class="punctuation"> = </span>id<span class="semi">;</span>
@@ -1034,7 +1028,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> Shape<span class="punctuation"> = </span><span class="mark"><span class="keyword">function</span></span> <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">this</span><span class="punctuation">.</span>id<span class="punctuation"> = </span>id<span class="semi">;</span>
     <span class="keyword">this</span><span class="punctuation">.</span>move<span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">)</span><span class="semi">;</span>
@@ -1051,7 +1045,7 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
     <div class="subtitle">Class Inheritance</div>
     <div class="desc">More intuitive, OOP-style and boilerplate-free inheritance.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">class</span></span> Rectangle <span class="mark"><span class="keyword">extends</span></span> Shape <span class="punctuation">{</span>
     constructor <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">,</span> width<span class="punctuation">,</span> height<span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="mark">super</span><span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">)</span><span class="semi">;</span>
@@ -1070,7 +1064,7 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> Rectangle<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">,</span> width<span class="punctuation">,</span> height<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark">Shape<span class="punctuation">.</span>call</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">,</span> id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">)</span><span class="semi">;</span>
     <span class="keyword">this</span><span class="punctuation">.</span>width <span class="punctuation"> = </span>width<span class="semi">;</span>
@@ -1094,7 +1088,7 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
 function objects. [Notice: the generic <code>aggregation</code> function is usually provided
 by a library like <a href="https://github.com/rse/aggregation">this one</a>, of course]</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark">aggregation</span><span class="punctuation"> = </span><span class="punctuation">(</span>baseClass<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>mixins<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
     <span class="keyword">let</span> base<span class="punctuation"> = </span><span class="keyword">class</span> _Combined <span class="keyword">extends</span> baseClass <span class="punctuation">{</span>
         constructor <span class="punctuation">(</span><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>args<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -1151,7 +1145,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>re
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark">aggregation</span><span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>baseClass<span class="punctuation">,</span> mixins<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">var</span> base<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="mark">baseClass<span class="punctuation">.</span>apply</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">,</span> arguments<span class="punctuation">)</span><span class="semi">;</span>
@@ -1218,7 +1212,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>re
     <div class="subtitle">Base Class Access</div>
     <div class="desc">Intuitive access to base class constructor and methods.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">class</span> Shape <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
     <span class="mark">toString</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -1248,7 +1242,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>re
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> Shape<span class="punctuation"> = </span><span class="mark"><span class="keyword">function</span></span> <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
 <span class="punctuation">}</span><span class="semi">;</span>
@@ -1277,7 +1271,7 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
     <div class="subtitle">Static Members</div>
     <div class="desc">Simple support for static class members.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">class</span> Rectangle <span class="keyword">extends</span> Shape <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
     <span class="mark">static defaultRectangle</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -1297,7 +1291,7 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> Rectangle<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>id<span class="punctuation">,</span> x<span class="punctuation">,</span> y<span class="punctuation">,</span> width<span class="punctuation">,</span> height<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
 <span class="punctuation">}</span><span class="semi">;</span>
@@ -1321,7 +1315,7 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
     <div class="desc">Getter/Setter also directly within classes (and not just within object
 initializers, as it is possible since ECMAScript 5.1).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">class</span> Rectangle <span class="punctuation">{</span>
     constructor <span class="punctuation">(</span>width<span class="punctuation">,</span> height<span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">this</span><span class="punctuation">.</span>_width <span class="punctuation"> = </span>width<span class="semi">;</span>
@@ -1340,7 +1334,7 @@ r<span class="punctuation">.</span>area <span class="punctuation">===</span> <sp
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> Rectangle<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>width<span class="punctuation">,</span> height<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">this</span><span class="punctuation">.</span>_width <span class="punctuation"> = </span>width<span class="semi">;</span>
     <span class="keyword">this</span><span class="punctuation">.</span>_height<span class="punctuation"> = </span>height<span class="semi">;</span>
@@ -1363,7 +1357,7 @@ r<span class="punctuation">.</span>area <span class="punctuation">===</span> <sp
     <div class="desc">Unique and immutable data type to be used as an identifier for object properties.
 Symbol can have an optional description, but for debugging purposes only.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">Symbol<span class="punctuation">(</span><span class="literal">"foo"</span><span class="punctuation">)</span> <span class="mark">!==</span> Symbol<span class="punctuation">(</span><span class="literal">"foo"</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">const</span> foo<span class="punctuation"> = </span>Symbol<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">const</span> bar<span class="punctuation"> = </span>Symbol<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -1381,7 +1375,7 @@ Object<span class="punctuation">.</span><span class="mark">getOwnPropertySymbols
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1391,7 +1385,7 @@ Object<span class="punctuation">.</span><span class="mark">getOwnPropertySymbols
     <div class="subtitle">Global Symbols</div>
     <div class="desc">Global symbols, indexed through unique keys.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span> <span class="mark"><span class="punctuation">===</span></span> Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span>
 <span class="keyword">const</span> foo<span class="punctuation"> = </span>Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">const</span> bar<span class="punctuation"> = </span>Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>bar"</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -1411,7 +1405,7 @@ Object<span class="punctuation">.</span><span class="mark">getOwnPropertySymbols
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1424,7 +1418,7 @@ iteration behaviour. Additionally, support "iterator" protocol to produce
 sequence of values (either finite or infinite). Finally, provide
 convenient <code>of</code> operator to iterate over all values of an iterable object.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
     <span class="mark"><span class="punctuation">[</span>Symbol<span class="punctuation">.</span>iterator<span class="punctuation">]</span><span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
         <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
@@ -1447,7 +1441,7 @@ convenient <code>of</code> operator to iterate over all values of an iterable ob
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
     <span class="mark">next:</span> <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">var</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
@@ -1478,7 +1472,7 @@ convenient <code>of</code> operator to iterate over all values of an iterable ob
 generator function, where the control flow can be paused and resumed, in
 order to produce sequence of values (either finite or infinite).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
     <span class="mark"><span class="punctuation">*</span><span class="punctuation">[</span>Symbol<span class="punctuation">.</span>iterator<span class="punctuation">]</span><span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
         <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
@@ -1499,7 +1493,7 @@ order to produce sequence of values (either finite or infinite).</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
     next: <span class="punctuation">(</span><span class="mark"><span class="keyword">function</span></span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="keyword">var</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
@@ -1529,7 +1523,7 @@ order to produce sequence of values (either finite or infinite).</div>
 the control flow can be paused and resumed, in order to produce sequence
 of values (either finite or infinite).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">function</span><span class="punctuation">*</span></span> range <span class="punctuation">(</span>start<span class="punctuation">,</span> end<span class="punctuation">,</span> step<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">while</span> <span class="punctuation">(</span>start <span class="punctuation">&lt;</span> end<span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="mark">yield</span> start<span class="semi">;</span>
@@ -1545,7 +1539,7 @@ of values (either finite or infinite).</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark"><span class="keyword">function</span></span> range <span class="punctuation">(</span>start<span class="punctuation">,</span> end<span class="punctuation">,</span> step<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="mark"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span><span class="punctuation">]</span></span><span class="semi">;</span>
     <span class="keyword">while</span> <span class="punctuation">(</span>start <span class="punctuation">&lt;</span> end<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -1569,7 +1563,7 @@ of values (either finite or infinite).</div>
 can be paused and resumed, in order to produce and spread sequence of
 values (either finite or infinite).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="mark"><span class="keyword">function</span><span class="punctuation">*</span></span> <span class="punctuation">(</span>numbers<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
     <span class="keyword">while</span> <span class="punctuation">(</span>numbers<span class="punctuation">-</span><span class="punctuation">-</span> <span class="punctuation">&gt;</span> <span class="literal">0</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -1589,7 +1583,7 @@ values (either finite or infinite).</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1605,7 +1599,7 @@ and given here just for better understanding. See
 <a href="https://github.com/tj/co">co</a> or
 <a href="https://github.com/petkaantonov/bluebird/blob/master/API.md#promisecoroutinegeneratorfunction-generatorfunction---function">Bluebird</a>'s <code>coroutine</code> in practice.]</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  generic asynchronous control<span class="punctuation">-</span>flow driver</span>
 <span class="keyword">function</span> <span class="mark">async</span> <span class="punctuation">(</span>proc<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">var</span> <span class="mark">iterator</span><span class="punctuation"> = </span><span class="mark">proc<span class="punctuation">(</span><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params<span class="punctuation">)</span></span><span class="semi">;</span>
@@ -1655,7 +1649,7 @@ and given here just for better understanding. See
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1666,7 +1660,7 @@ and given here just for better understanding. See
     <div class="desc">Support for generator methods, i.e., methods in classes and on objects,
 based on generator functions.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">class</span> Clz <span class="punctuation">{</span>
     <span class="mark"><span class="punctuation">*</span> bar <span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
         <span class="ellipsis">&hellip;</span>
@@ -1682,7 +1676,7 @@ based on generator functions.</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1692,7 +1686,7 @@ based on generator functions.</div>
     <div class="subtitle">Set Data-Structure</div>
     <div class="desc">Cleaner data-structure for common algorithms based on sets.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> s<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Set<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
 s<span class="punctuation">.</span><span class="mark">add<span class="punctuation">(</span><span class="literal">"hello"</span><span class="punctuation">)</span></span><span class="punctuation">.</span><span class="mark">add<span class="punctuation">(</span><span class="literal">"goodbye"</span><span class="punctuation">)</span></span><span class="punctuation">.</span><span class="mark">add<span class="punctuation">(</span><span class="literal">"hello"</span><span class="punctuation">)</span></span><span class="semi">;</span>
 s<span class="punctuation">.</span><span class="mark">size</span> <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
@@ -1704,7 +1698,7 @@ s<span class="punctuation">.</span><span class="mark">has<span class="punctuatio
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> s<span class="punctuation"> = </span><span class="mark"><span class="punctuation">{</span><span class="punctuation">}</span></span><span class="semi">;</span>
 <span class="mark">s<span class="punctuation">[</span><span class="literal">"hello"</span><span class="punctuation">]</span><span class="punctuation"> = </span>true</span><span class="punctuation">;</span> <span class="mark">s<span class="punctuation">[</span><span class="literal">"goodbye"</span><span class="punctuation">]</span><span class="punctuation"> = </span>true</span><span class="punctuation">;</span> <span class="mark">s<span class="punctuation">[</span><span class="literal">"hello"</span><span class="punctuation">]</span><span class="punctuation"> = </span>true</span><span class="semi">;</span>
 <span class="mark">Object<span class="punctuation">.</span>keys<span class="punctuation">(</span>s<span class="punctuation">)</span><span class="punctuation">.</span>length</span> <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
@@ -1720,7 +1714,7 @@ s<span class="punctuation">.</span><span class="mark">has<span class="punctuatio
     <div class="subtitle">Map Data-Structure</div>
     <div class="desc">Cleaner data-structure for common algorithms based on maps.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> m<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Map<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
 m<span class="punctuation">.</span><span class="mark">set<span class="punctuation">(</span><span class="literal">"hello"</span><span class="punctuation">,</span> <span class="literal">42</span><span class="punctuation">)</span></span><span class="semi">;</span>
 m<span class="punctuation">.</span><span class="mark">set<span class="punctuation">(</span>s<span class="punctuation">,</span> <span class="literal">34</span><span class="punctuation">)</span></span><span class="semi">;</span>
@@ -1733,7 +1727,7 @@ m<span class="punctuation">.</span><span class="mark">size</span> <span class="p
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> m<span class="punctuation"> = </span><span class="mark"><span class="punctuation">{</span><span class="punctuation">}</span></span><span class="semi">;</span>
 <span class="mark">m<span class="punctuation">[</span><span class="literal">"hello"</span><span class="punctuation">]</span><span class="punctuation"> = </span><span class="literal">42</span></span><span class="semi">;</span><span class="comment">
 // no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span><span class="comment">
@@ -1753,7 +1747,7 @@ m<span class="punctuation">.</span><span class="mark">size</span> <span class="p
     <div class="subtitle">Weak-Link Data-Structures</div>
     <div class="desc">Memory-leak-free Object-key’d side-by-side data-structures.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> isMarked    <span class="punctuation"> = </span><span class="keyword">new</span> <span class="mark">WeakSet</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">let</span> attachedData<span class="punctuation"> = </span><span class="keyword">new</span> <span class="mark">WeakMap</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
 
@@ -1784,7 +1778,7 @@ isMarked<span class="punctuation">.</span>has<span class="punctuation">(</span>f
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1795,7 +1789,7 @@ isMarked<span class="punctuation">.</span>has<span class="punctuation">(</span>f
     <div class="desc">Support for arbitrary byte-based data structures to implement network
 protocols, cryptography algorithms, file format manipulations, etc.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  ES<span class="literal">6</span> <span class="keyword">class</span> equivalent to the following C structure:</span><span class="comment">
 //  struct Example <span class="punctuation">{</span> unsigned long id<span class="punctuation">;</span> char username<span class="punctuation">[</span><span class="literal">16</span><span class="punctuation">]</span><span class="punctuation">;</span> float amountDue<span class="semi">;</span> <span class="punctuation">}</span><span class="semi">;</span></span>
 <span class="keyword">class</span> Example <span class="punctuation">{</span>
@@ -1826,7 +1820,7 @@ example<span class="punctuation">.</span><span class="mark">amountDue</span><spa
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span><span class="comment">
 //  <span class="punctuation">(</span>only an equivalent <span class="keyword">in</span> HTML<span class="literal">5</span><span class="punctuation">)</span></span></div>
     <i class="icon fa fa-circle"></i>
@@ -1838,7 +1832,7 @@ example<span class="punctuation">.</span><span class="mark">amountDue</span><spa
     <div class="desc">New function for assigning enumerable properties of one or more source
 objects onto a destination object.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> dst <span class="punctuation"> = </span><span class="punctuation">{</span> quux: <span class="literal">0</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> src<span class="literal">1</span><span class="punctuation"> = </span><span class="punctuation">{</span> foo: <span class="mark"><span class="literal">1</span></span><span class="punctuation">,</span> bar: <span class="literal">2</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> src<span class="literal">2</span><span class="punctuation"> = </span><span class="punctuation">{</span> foo: <span class="mark"><span class="literal">3</span></span><span class="punctuation">,</span> baz: <span class="literal">4</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -1853,7 +1847,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> dst <span class="punctuation"> = </span><span class="punctuation">{</span> quux: <span class="literal">0</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> src<span class="literal">1</span><span class="punctuation"> = </span><span class="punctuation">{</span> foo: <span class="mark"><span class="literal">1</span></span><span class="punctuation">,</span> bar: <span class="literal">2</span> <span class="punctuation">}</span><span class="semi">;</span>
 <span class="keyword">var</span> src<span class="literal">2</span><span class="punctuation"> = </span><span class="punctuation">{</span> foo: <span class="mark"><span class="literal">3</span></span><span class="punctuation">,</span> baz: <span class="literal">4</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -1875,14 +1869,14 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <div class="subtitle">Array Element Finding</div>
     <div class="desc">New function for finding an element in an array.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">3</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">2</span> <span class="punctuation">]</span><span class="punctuation">.</span><span class="mark">find</span><span class="punctuation">(</span><span class="mark">x <span class="punctuation">=&gt;</span></span> x <span class="punctuation">&gt;</span> <span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="literal">4</span></span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="punctuation">[</span> <span class="literal">1</span><span class="punctuation">,</span> <span class="literal">3</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">2</span> <span class="punctuation">]</span><span class="punctuation">.</span><span class="mark">filter</span><span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span></span> x <span class="punctuation">&gt;</span> <span class="literal">3</span><span class="semi">;</span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="mark"><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span></span><span class="semi">;</span><span class="comment"> // <span class="literal">4</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -1892,7 +1886,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <div class="subtitle">String Repeating</div>
     <div class="desc">New string repeating functionality.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="literal">" "</span><span class="punctuation">.</span><span class="mark">repeat</span><span class="punctuation">(</span><span class="literal">4</span> <span class="punctuation">*</span> depth<span class="punctuation">)</span><span class="semi">;</span>
 <span class="literal">"foo"</span><span class="punctuation">.</span><span class="mark">repeat</span><span class="punctuation">(</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span>
 </div>
@@ -1900,7 +1894,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="mark">Array</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="literal">4</span> <span class="punctuation">*</span> depth<span class="punctuation">)</span> <span class="punctuation">+</span> <span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="mark">join</span><span class="punctuation">(</span><span class="literal">" "</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="mark">Array</span><span class="punctuation">(</span><span class="literal">3</span> <span class="punctuation">+</span> <span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="mark">join</span><span class="punctuation">(</span><span class="literal">"foo"</span><span class="punctuation">)</span><span class="semi">;</span></div>
     <i class="icon fa fa-circle"></i>
@@ -1911,7 +1905,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <div class="subtitle">String Searching</div>
     <div class="desc">New specific string functions to search for a sub-string.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">startsWith</span><span class="punctuation">(</span><span class="literal">"ello"</span><span class="punctuation">,</span> <span class="literal">1</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">endsWith</span><span class="punctuation">(</span><span class="literal">"hell"</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">)</span><span class="semi">;</span>  <span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">includes</span><span class="punctuation">(</span><span class="literal">"ell"</span><span class="punctuation">)</span><span class="semi">;</span>      <span class="comment"> // true</span>
@@ -1922,7 +1916,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"ello"</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">1</span><span class="semi">;</span>   <span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"hell"</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="punctuation">(</span><span class="literal">4</span> <span class="mark"><span class="punctuation">-</span> <span class="literal">"hell"</span><span class="punctuation">.</span>length</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"ell"</span><span class="punctuation">)</span> !== <span class="punctuation">-</span><span class="literal">1</span><span class="semi">;</span>   <span class="comment"> // true</span>
@@ -1936,7 +1930,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <div class="subtitle">Number Type Checking</div>
     <div class="desc">New functions for checking for non-numbers and finite numbers.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">Number<span class="punctuation">.</span><span class="mark">isNaN</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
 Number<span class="punctuation">.</span><span class="mark">isNaN</span><span class="punctuation">(</span>NaN<span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
 
@@ -1949,7 +1943,7 @@ Number<span class="punctuation">.</span><span class="mark">isFinite</span><span 
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> <span class="mark">isNaN</span><span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>n<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="mark">n !== n</span><span class="semi">;</span>
 <span class="punctuation">}</span><span class="semi">;</span>
@@ -1973,7 +1967,7 @@ isFinite<span class="punctuation">(</span><span class="literal">123</span><span 
 correctly represented by JavaScript (where all numbers, including
 integer numbers, are technically floating point number).</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
 Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">9007199254740992</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
 </div>
@@ -1981,7 +1975,7 @@ Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> isSafeInteger <span class="punctuation">(</span>n<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="punctuation">(</span>
            typeof n <span class="punctuation">===</span> <span class="literal">'number'</span>
@@ -2001,7 +1995,7 @@ Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><
     <div class="desc">Availability of a standard Epsilon value for more precise comparison of
 floating point numbers.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // false</span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span>Math<span class="punctuation">.</span>abs<span class="punctuation">(</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span> <span class="punctuation">&lt;</span> <span class="mark">Number<span class="punctuation">.</span>EPSILON</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span>
 </div>
@@ -2009,7 +2003,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>Ma
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // false</span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span>Math<span class="punctuation">.</span>abs<span class="punctuation">(</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span> <span class="punctuation">&lt;</span> <span class="mark"><span class="literal">2</span><span class="punctuation">.</span><span class="literal">220446049250313</span>e<span class="punctuation">-</span><span class="literal">16</span></span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span></div>
     <i class="icon fa fa-circle"></i>
@@ -2021,7 +2015,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>Ma
     <div class="desc">Truncate a floating point number to its integral part,
 completely dropping the fractional part.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">.</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">42</span></span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">0</span></span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span>
@@ -2030,7 +2024,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> mathTrunc <span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="mark"><span class="punctuation">(</span>x <span class="punctuation">&lt;</span> <span class="literal">0</span> ? Math<span class="punctuation">.</span>ceil<span class="punctuation">(</span>x<span class="punctuation">)</span> : Math<span class="punctuation">.</span>floor<span class="punctuation">(</span>x<span class="punctuation">)</span><span class="punctuation">)</span></span><span class="semi">;</span>
 <span class="punctuation">}</span>
@@ -2045,7 +2039,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>ma
     <div class="subtitle">Number Sign Determination</div>
     <div class="desc">Determine the sign of a number, including special cases of signed zero and non-number.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">1</span></span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">0</span></span>
 console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span>
@@ -2056,7 +2050,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> <span class="mark">mathSign</span> <span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="mark"><span class="punctuation">(</span><span class="punctuation">(</span>x <span class="punctuation">===</span> <span class="literal">0</span> &#124;&#124; isNaN<span class="punctuation">(</span>x<span class="punctuation">)</span><span class="punctuation">)</span> ? x : <span class="punctuation">(</span>x <span class="punctuation">&gt;</span> <span class="literal">0</span> ? <span class="literal">1</span> : <span class="punctuation">-</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span></span><span class="semi">;</span>
 <span class="punctuation">}</span>
@@ -2073,7 +2067,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>ma
     <div class="subtitle">Promise Usage</div>
     <div class="desc">First class representation of a value that may be made asynchronously and be available in the future.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> msgAfterTimeout <span class="punctuation">(</span>msg<span class="punctuation">,</span> who<span class="punctuation">,</span> timeout<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">return</span> <span class="mark"><span class="keyword">new</span> Promise</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="mark">resolve</span><span class="punctuation">,</span> reject<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
         setTimeout<span class="punctuation">(</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="mark">resolve</span><span class="punctuation">(</span><span class="literal">`$<span class="punctuation">{</span>msg<span class="punctuation">}</span> Hello $<span class="punctuation">{</span>who<span class="punctuation">}</span>!`</span><span class="punctuation">)</span><span class="punctuation">,</span> timeout<span class="punctuation">)</span><span class="semi">;</span>
@@ -2089,7 +2083,7 @@ msgAfterTimeout<span class="punctuation">(</span><span class="literal">""</span>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> msgAfterTimeout <span class="punctuation">(</span>msg<span class="punctuation">,</span> who<span class="punctuation">,</span> timeout<span class="punctuation">,</span> <span class="mark">onDone</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     setTimeout<span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
         <span class="mark">onDone</span><span class="punctuation">(</span>msg <span class="punctuation">+</span> <span class="literal">" Hello "</span> <span class="punctuation">+</span> who <span class="punctuation">+</span> <span class="literal">"!"</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -2109,7 +2103,7 @@ msgAfterTimeout<span class="punctuation">(</span><span class="literal">""</span>
     <div class="desc">Combine one or more promises into new promises without having to take
 care of ordering of the underlying asynchronous operations yourself.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> fetchAsync <span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
 <span class="punctuation">}</span>
@@ -2133,7 +2127,7 @@ care of ordering of the underlying asynchronous operations yourself.</div>
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">function</span> fetchAsync <span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="ellipsis">&hellip;</span>
 <span class="punctuation">}</span>
@@ -2168,7 +2162,7 @@ care of ordering of the underlying asynchronous operations yourself.</div>
     <div class="subtitle">Proxying</div>
     <div class="desc">Hooking into runtime-level object meta-operations.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> target<span class="punctuation"> = </span><span class="punctuation">{</span>
     foo: <span class="literal">"Welcome<span class="punctuation">,</span> foo"</span>
 <span class="punctuation">}</span><span class="semi">;</span>
@@ -2184,7 +2178,7 @@ proxy<span class="punctuation">.</span><span class="mark">world</span> <span cla
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -2194,7 +2188,7 @@ proxy<span class="punctuation">.</span><span class="mark">world</span> <span cla
     <div class="subtitle">Reflection</div>
     <div class="desc">Make calls corresponding to the object meta-operations.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">let</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span> a: <span class="literal">1</span> <span class="punctuation">}</span><span class="semi">;</span>
 Object<span class="punctuation">.</span>defineProperty<span class="punctuation">(</span>obj<span class="punctuation">,</span> <span class="literal">"b"</span><span class="punctuation">,</span> <span class="punctuation">{</span> value: <span class="literal">2</span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
 obj<span class="punctuation">[</span>Symbol<span class="punctuation">(</span><span class="literal">"c"</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation"> = </span><span class="literal">3</span><span class="semi">;</span>
@@ -2204,7 +2198,7 @@ obj<span class="punctuation">[</span>Symbol<span class="punctuation">(</span><sp
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span> a: <span class="literal">1</span> <span class="punctuation">}</span><span class="semi">;</span>
 Object<span class="punctuation">.</span>defineProperty<span class="punctuation">(</span>obj<span class="punctuation">,</span> <span class="literal">"b"</span><span class="punctuation">,</span> <span class="punctuation">{</span> value: <span class="literal">2</span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment">
 // no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span>
@@ -2218,7 +2212,7 @@ Object<span class="punctuation">.</span>defineProperty<span class="punctuation">
     <div class="desc">Sorting a set of strings and searching within a set of strings.
 Collation is parameterized by locale and aware of Unicode.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// <span class="keyword">in</span> German<span class="punctuation">,</span>  <span class="literal">"ä"</span> sorts with <span class="literal">"a"</span></span><span class="comment">
 // <span class="keyword">in</span> Swedish<span class="punctuation">,</span> <span class="literal">"ä"</span> sorts after <span class="literal">"z"</span></span>
 <span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="mark"><span class="literal">"ä"</span></span><span class="punctuation">,</span> <span class="literal">"a"</span><span class="punctuation">,</span> <span class="literal">"z"</span> <span class="punctuation">]</span><span class="semi">;</span>
@@ -2233,7 +2227,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>li
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -2243,7 +2237,7 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>li
     <div class="subtitle">Number Formatting</div>
     <div class="desc">Format numbers with digit grouping and localized separators.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> l<span class="literal">10</span>nDE<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"de<span class="punctuation">-</span>DE"</span></span><span class="punctuation">)</span><span class="semi">;</span>
 l<span class="literal">10</span>nEN<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">1234567</span><span class="punctuation">.</span><span class="literal">89</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"1<span class="punctuation">,</span>234<span class="punctuation">,</span>567<span class="punctuation">.</span>89"</span></span><span class="semi">;</span>
@@ -2253,7 +2247,7 @@ l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -2263,7 +2257,7 @@ l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span
     <div class="subtitle">Currency Formatting</div>
     <div class="desc">Format numbers with digit grouping, localized separators and attached currency symbol.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nUSD<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>US"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"USD"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> l<span class="literal">10</span>nGBP<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>GB"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"GBP"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> l<span class="literal">10</span>nEUR<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"de<span class="punctuation">-</span>DE"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"EUR"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -2275,7 +2269,7 @@ l<span class="literal">10</span>nEUR<span class="punctuation">.</span>format<spa
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
@@ -2285,7 +2279,7 @@ l<span class="literal">10</span>nEUR<span class="punctuation">.</span>format<spa
     <div class="subtitle">Date/Time Formatting</div>
     <div class="desc">Format date/time with localized ordering and separators.</div>
 <div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>DateTimeFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="keyword">var</span> l<span class="literal">10</span>nDE<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>DateTimeFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"de<span class="punctuation">-</span>DE"</span></span><span class="punctuation">)</span><span class="semi">;</span>
 l<span class="literal">10</span>nEN<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="keyword">new</span> Date<span class="punctuation">(</span><span class="literal">"2015<span class="punctuation">-</span>01<span class="punctuation">-</span>02"</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"1/2/2015"</span></span><span class="semi">;</span>
@@ -2295,7 +2289,7 @@ l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span
     <i class="icon fa fa-check-circle"></i>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
+    <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduzida</span> | <span class="style traditional">tradicional</span></div>
     <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
