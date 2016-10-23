@@ -286,7 +286,7 @@ PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span cla
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">
-<span class="comment">//  possível  em  ES 5  somente com uso de propriedade de objeto</span>
+<span class="comment">//  possível  em  ES 5  somente com uso de propriedade de objeto</span><br/>
 <span class="comment">//  e somente no contexto global e não em escopo de bloco</span>
 Object<span class="punctuation">.</span><span class="mark">defineProperty</span><span class="punctuation">(</span>typeof global <span class="punctuation">===</span> <span class="literal">"object"</span> ? global : window<span class="punctuation">,</span> <span class="literal">"<span class="mark">PI</span>"</span><span class="punctuation">,</span> <span class="punctuation">{</span>
     value:        <span class="literal">3</span><span class="punctuation">.</span><span class="literal">141593</span><span class="punctuation">,</span>
@@ -370,7 +370,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">
-<span class="comment">//  possível  em ES 5 somente com uso de emulação - de escopo de bloco</span>
+<span class="comment">//  possível  em ES 5 somente com uso de emulação - de escopo de bloco</span><br/>
 <span class="comment">//  escopo de função e função expressão</span>
 <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">var</span> foo<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span> <span class="literal">1</span><span class="semi">;</span> <span class="punctuation">}</span>
@@ -386,8 +386,8 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
 </div>
 </div>
 <div id="ExpressionBodies" class="showcase showcase_ExpressionBodies">    <div class="title">Arrow Functions</div>
-    <div class="subtitle">Expression Bodies</div>
-    <div class="desc">More expressive closure syntax.</div>
+    <div class="subtitle">Declaração de função</div>
+    <div class="desc">Sintaxe simplificada.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">odds <span class="punctuation"> = </span>evens<span class="punctuation">.</span>map<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span></span> v <span class="punctuation">+</span> <span class="literal">1</span><span class="punctuation">)</span><span class="semi">;</span>
@@ -407,8 +407,8 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 </div>
 <div id="StatementBodies" class="showcase showcase_StatementBodies">    <div class="title">Arrow Functions</div>
-    <div class="subtitle">Statement Bodies</div>
-    <div class="desc">More expressive closure syntax.</div>
+    <div class="subtitle">Corpo da função</div>
+    <div class="desc">Sintaxe simplificada.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark">v <span class="punctuation">=&gt;</span> <span class="punctuation">{</span></span>
@@ -430,8 +430,8 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 </div>
 <div id="Lexicalthis" class="showcase showcase_Lexicalthis">    <div class="title">Arrow Functions</div>
-    <div class="subtitle">Lexical <code>this</code></div>
-    <div class="desc">More intuitive handling of current object context.</div>
+    <div class="subtitle">Significado de <code>this</code></div>
+    <div class="desc">Maneira mais intuitiva de manipular o contexto do objeto atual.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">=&gt;</span></span> <span class="punctuation">{</span>
@@ -444,20 +444,20 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  variant <span class="literal">1</span></span>
+    <div class="code"><span class="comment">//  variante 1</span>
 <span class="keyword">var</span> <span class="mark">self</span><span class="punctuation"> = </span><span class="mark"><span class="keyword">this</span></span><span class="semi">;</span>
 <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span></span> <span class="punctuation">{</span>
     <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
         <span class="mark">self</span><span class="punctuation">.</span>fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
 <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="comment">
-//  variant <span class="literal">2</span></span>
+//  variante 2</span>
 <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span></span> <span class="punctuation">{</span>
     <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
         <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
 <span class="punctuation">}</span><span class="punctuation">,</span> <span class="mark"><span class="keyword">this</span></span><span class="punctuation">)</span><span class="semi">;</span>
 <span class="comment">
-//  variant <span class="literal">3</span> <span class="punctuation">(</span>since ECMAScript <span class="literal">5</span><span class="punctuation">.</span><span class="literal">1</span> only<span class="punctuation">)</span></span>
+//  variante 3</span> <span class="punctuation">(</span>since ECMAScript <span class="literal">5</span><span class="punctuation">.</span><span class="literal">1</span> only<span class="punctuation">)</span></span>
 <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>nums<span class="punctuation">.</span>forEach<span class="punctuation">(</span><span class="mark"><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span></span> <span class="punctuation">{</span>
     <span class="keyword">if</span> <span class="punctuation">(</span>v <span class="punctuation">%</span> <span class="literal">5</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">)</span>
         <span class="mark"><span class="keyword">this</span></span><span class="punctuation">.</span>fives<span class="punctuation">.</span>push<span class="punctuation">(</span>v<span class="punctuation">)</span><span class="semi">;</span>
@@ -467,8 +467,8 @@ nums <span class="punctuation"> = </span>evens<span class="punctuation">.</span>
 </div>
 </div>
 <div id="DefaultParameterValues" class="showcase showcase_DefaultParameterValues">    <div class="title">Extended Parameter Handling</div>
-    <div class="subtitle">Default Parameter Values</div>
-    <div class="desc">Simple and intuitive default values for function parameters.</div>
+    <div class="subtitle">Valor default de parâmetros</div>
+    <div class="desc">Valores default dos parâmetros de funcões mais simples e intuitivos.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y <span class="mark">= <span class="literal">7</span></span><span class="punctuation">,</span> z <span class="mark">= <span class="literal">42</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -493,9 +493,9 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="RestParameter" class="showcase showcase_RestParameter">    <div class="title">Extended Parameter Handling</div>
+<div id="RestParameter" class="showcase showcase_RestParameter">    <div class="title">Parâmetros estendidos</div>
     <div class="subtitle">Rest Parameter</div>
-    <div class="desc">Aggregation of remaining arguments into single parameter of variadic functions.</div>
+    <div class="desc">Maneira simples de agregar vários argumentos em um parâmetro estendido.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> f <span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>a</span><span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -518,7 +518,7 @@ f<span class="punctuation">(</span><span class="literal">1</span><span class="pu
 </div>
 </div>
 <div id="SpreadOperator" class="showcase showcase_SpreadOperator">    <div class="title">Extended Parameter Handling</div>
-    <div class="subtitle">Spread Operator</div>
+    <div class="subtitle">Operador Spread</div>
     <div class="desc">Spreading of elements of an iterable collection (like an array or even
 a string) into both literal elements and individual function parameters.</div>
 <div class="js es6">
