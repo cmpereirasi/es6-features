@@ -285,8 +285,8 @@ PI <span class="punctuation">&gt;</span> <span class="literal">3</span><span cla
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  only <span class="keyword">in</span> ES<span class="literal">5</span> through the help <span class="keyword">of</span> object properties</span><span class="comment">
-//  and only <span class="keyword">in</span> global context and not <span class="keyword">in</span> a block scope</span>
+    <div class="code"><span class="comment">//  possível  em  ES 5  somente com uso de propriedade de objeto</span>
+    <span class="comment">//  e somente no contexto global e não em escopo de bloco</span>
 Object<span class="punctuation">.</span><span class="mark">defineProperty</span><span class="punctuation">(</span>typeof global <span class="punctuation">===</span> <span class="literal">"object"</span> ? global : window<span class="punctuation">,</span> <span class="literal">"<span class="mark">PI</span>"</span><span class="punctuation">,</span> <span class="punctuation">{</span>
     value:        <span class="literal">3</span><span class="punctuation">.</span><span class="literal">141593</span><span class="punctuation">,</span>
     enumerable:   true<span class="punctuation">,</span>
@@ -350,7 +350,7 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
 </div>
 <div id="BlockScopedFunctions" class="showcase showcase_BlockScopedFunctions">    <div class="title">Scoping</div>
     <div class="subtitle">Funções Block-Scoped</div>
-    <div class="desc">Definiuções para funções Block-scoped.</div>
+    <div class="desc">Definições para funções Block-scoped.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="punctuation">{</span>
@@ -368,8 +368,8 @@ callbacks<span class="punctuation">[</span><span class="literal">2</span><span c
 </div>
     <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  only <span class="keyword">in</span> ES<span class="literal">5</span> with the help <span class="keyword">of</span> block<span class="punctuation">-</span>scope emulating</span><span class="comment">
-//  <span class="keyword">function</span> scopes and <span class="keyword">function</span> expressions</span>
+    <div class="code"><span class="comment">//  possível  em ES 5 somente com uso de emulação - de escopo de bloco</span>
+    <span class="comment">//  escopo de função e função expressão</span>
 <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
     <span class="keyword">var</span> foo<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">return</span> <span class="literal">1</span><span class="semi">;</span> <span class="punctuation">}</span>
     foo<span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">1</span><span class="semi">;</span>
