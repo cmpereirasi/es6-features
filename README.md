@@ -73,13 +73,11 @@ e uma comparação com das funcionalidades equivalentes da antiga ES 5.
   So, ECMAScript 5 might be sufficient, but ECMAScript 6 nevertheless
   is an important improvement.
 
-- *I've found a mistake, how can I contribute?*
+- *Encontrei um erro, como posso contribuir?*
 
-  The source is the file `features.txt`, everything else on [es6-features.org](http://es6-features.org) is
-  just generated out of it. Fork this project on Github, edit the file
-  `features.txt` and then please send a pull request.
+  O projeto para o site da tradução é diferente do projeto para o site original e usa os arquivos index.html e README.md. Edite um destes dois arquivos com o erro e envie um pull request.
 
-- *Do you know more such ECMAScript 6 feature lists?*
+- *Você tem outras indicações de consulta às funcionalidades ECMAScript 6?*
 
     - [ECMAScript 6 Features](https://github.com/lukehoban/es6features#readme) (by Luke Hoban)
     - [Learn ES2015 - A detailed overview of ECMAScript 6 features](https://babeljs.io/docs/learn-es2015/) (by Babel team)
