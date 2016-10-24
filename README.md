@@ -25,11 +25,11 @@ e uma comparação com das funcionalidades equivalentes da antiga ES 5.
 
 - *Onde encontro a especificação para ES 6?*
 
-  A versão da especificação ES 6  (ECMA-262) foi publicada em junho de 2015. A especificação encontra-s em [ecmascript.org](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
+  A versão da especificação ES 6  (ECMA-262) foi publicada em junho de 2015. A especificação encontra-se em [ecmascript.org](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
 
-- *How can I use ECMAScript 6 if my JavaScript runtime still does not support it?*
+- *Posso usar ECMAScript 6 ainda que meu JavaScript runtime não ofereça suporte?*
 
-  Use the awesome [Babel](http://babeljs.io/) transpiler. For Node.js/io.js environments
+  Sim. Use o transpiler [Babel](http://babeljs.io/). For Node.js/io.js environments
   just use its tricky [`require` hook](http://babeljs.io/docs/usage/require/). For browser environments use Babel in conjunction
   with [Browserify](http://browserify.org/) and its [Babelify](https://github.com/babel/babelify) plugin. For
   other tools see [Using Babel](http://babeljs.io/docs/using-babel/).
