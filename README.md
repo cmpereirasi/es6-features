@@ -1,41 +1,31 @@
 
-# [es6-features.org](http://es6-features.org/)
+# [Site da tradução](https://maujor.github.io/es6-features)
 
-### ECMAScript 6: Feature Overview &amp; Comparison
+### ES 6: Visão geral e comparação com a ES 5
 
 Copyright (c) 2015-2016 Ralf S. Engelschall &lt;[rse@engelschall.com](mailto:rse@engelschall.com)&gt; &lt;[@engelschall](http://twitter.com/engelschall)&gt;<br/>
 Partially based on [code snippets](http://git.io/es6features) by Luke Hoban.<br/>
+Traduzido para o português do Brasil por [Maujor](http://maujor.com)<br/>
 Licensed under MIT license.
 
-This is the source of the website [es6-features.org](http://es6-features.org/),
-a small overview of current
-[ECMAScript 6](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
-language features and a comparison to their old
-ECMAScript 5 equivalents.
+O website da tradução encontra-se em [https://maujor.github.io/es6-features](https://maujor.github.io/es6-features),
+e apresenta uma visão geral das funcionalidades da linguagem [ES 6](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+e uma comparação com das funcionalidades equivalentes da antiga ES 5.
 
-## Frequently Asked Questions? (FAQ)
+## Perguntas frequentes? (FAQ)
 
-- *Why was it setup? Is the ECMAScript 6 specification not enough?*
+- *Por que este repositório e respectivo website foram criados? Consultar a especificação para a ECMAScript 2005 não é suficiente?*
 
-  It was setup by computer scientist and software
-  architect [Ralf S. Engelschall](mailto:rse@engelschall.com) in March 2015 in order to
-  promote ECMAScript 6 in the software engineering projects around him
-  and to have bookmarkable URLs at hand for referencing certain
-  ECMAScript 6 features. Additionally, creating this website was a
-  good approach for Ralf S. Engelschall to learn the new ECMAScript 6
-  features himself.
+  Este projeto foi criado pelo cientista da computação e arquiteto de software [Ralf S. Engelschall](mailto:rse@engelschall.com) em março de 2015 com a finalidade de documentar as funcionalidades da ES 6 para consulta em seus projetos de engenharia de software e criar uma fonte de consulta contendo as funcionalidades da  ES 6. Além disso, o ato de criar o website constitui-se em um ótimo exercício prático para  Ralf S. Engelschall aprender as funcionalidades da ES 6.
 
-- *Where can I find the current browser support status quo for ECMASCript 6?*
+- *Onde encontro uma listagem mostrando as funcionalidades da ES 6 suportadas  pelas versões atuais dos diferentes navegadores?*
 
-  Have a look at the regularily updated
-  [ECMAScript compatibility table](http://kangax.github.io/compat-table/es6/) by kangax.
-  There, especially notice the column "Babel + core-js" as this is what can be achieved
-  today with transpiling (and that's fully sufficient for practice).
+  Para suporte às funcionalidades da ES 6 consulte a   [tabela de compatibilidade com a ECMAScript](http://kangax.github.io/compat-table/es6/) criada por kangax.
+  Na tabela observe a coluna  "Babel + core-js". Nela você encontra as funcionalidades que já podem ser usadas com uso de "transpiling" (o que é suficiente para a prática).
 
-- *Where can I find the latest ECMAScript 6 standard?*
+- *Onde encontro a especificação para ES 6?*
 
-  The final ECMAScript 6 standard (ECMA-262) was published in June 2015. You can find the
-  standard on [ecmascript.org](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
+  A versão da especificação ES 6  (ECMA-262) foi publicada em junho de 2015. A especificação encontra-s em [ecmascript.org](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
 
 - *How can I use ECMAScript 6 if my JavaScript runtime still does not support it?*
 
