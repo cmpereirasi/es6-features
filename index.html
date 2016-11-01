@@ -107,15 +107,15 @@
 <li class="subtitle subtitle_CustomInterpolation">
     <a href="#CustomInterpolation">Interpolação Customizada</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_RawStringAccess">
-    <a href="#RawStringAccess">Raw String Access</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#RawStringAccess">Acesso Base String</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 <li class="title">Literais Extendidos
     <ul>
 <li class="subtitle subtitle_BinaryOctalLiteral">
-    <a href="#BinaryOctalLiteral">Binary e Octal Literal</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#BinaryOctalLiteral">Binário e Octal</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_UnicodeStringRegExpLiteral">
-    <a href="#UnicodeStringRegExpLiteral">Unicode String e RegExp Literal</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#UnicodeStringRegExpLiteral">Unicode e RegExp</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 <li class="title">Expressões Regulares Melhoradas
@@ -542,11 +542,12 @@ f<span class="mark"><span class="punctuation">.</span>apply</span><span class="p
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="StringInterpolation" class="showcase showcase_StringInterpolation">    <div class="title">Template Literals</div>
-    <div class="subtitle">String Interpolation</div>
-    <div class="desc">Intuitive expression interpolation for single-line and multi-line strings.
-(Notice: don't be confused, Template Literals were originally named
-"Template Strings" in the drafts of the ECMAScript 6 language specification)</div>
+<div id="StringInterpolation" class="showcase showcase_StringInterpolation">    <div class="title">Template Literal</div>
+    <div class="subtitle">Interpolação de String</div>
+    <div class="desc">
+	Expressão de interpolação intuitiva para string de linha única ou multiplas linhas.
+	(Aviso: não se confunda, Templates Literais são originalmente chamados de "Template String" nos projectos de especificação de linguagem ECMAScript 6)
+    </div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">var</span> customer<span class="punctuation"> = </span><span class="punctuation">{</span> name: <span class="literal">"Foo"</span> <span class="punctuation">}</span><span class="semi">;</span>
@@ -569,9 +570,9 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="CustomInterpolation" class="showcase showcase_CustomInterpolation">    <div class="title">Template Literals</div>
-    <div class="subtitle">Custom Interpolation</div>
-    <div class="desc">Flexible expression interpolation for arbitrary methods.</div>
+<div id="CustomInterpolation" class="showcase showcase_CustomInterpolation">    <div class="title">Template Literal</div>
+    <div class="subtitle">Interpolação Personalizada</div>
+    <div class="desc">Expressão flexivel de interpolação para métodos arbitrários.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code">get<span class="mark"><span class="literal">`</span>http://example<span class="punctuation">.</span>com/foo?bar=<span class="mark">$<span class="punctuation">{</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">}</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span>quux=<span class="mark">$<span class="punctuation">{</span></span>quux<span class="mark"><span class="punctuation">}</span>`</span></span><span class="semi">;</span>
@@ -586,9 +587,9 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="RawStringAccess" class="showcase showcase_RawStringAccess">    <div class="title">Template Literals</div>
-    <div class="subtitle">Raw String Access</div>
-    <div class="desc">Access the raw template string content (backslashes are not interpreted).</div>
+<div id="RawStringAccess" class="showcase showcase_RawStringAccess">    <div class="title">Template Literal</div>
+    <div class="subtitle">String Base de Acesso</div>
+    <div class="desc">Acessa o conteúdo base do template string. (barras invertidas não são interpretadas.).</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="keyword">function</span> quux <span class="punctuation">(</span>strings<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>values<span class="punctuation">)</span> <span class="punctuation">{</span>
@@ -613,13 +614,13 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="BinaryOctalLiteral" class="showcase showcase_BinaryOctalLiteral">   <div class="title">Extended Literals</div>
-    <div class="subtitle">Binary e Octal Literal</div>
-    <div class="desc">Direct support for safe binary and octal literals.</div>
+<div id="BinaryOctalLiteral" class="showcase showcase_BinaryOctalLiteral">   <div class="title">Literais Extendidos</div>
+    <div class="subtitle">Literal Binário e Octal</div>
+    <div class="desc">Suporte direto e livre a literais binários e octal.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="mark"><span class="literal">0</span>b</span><span class="literal">111110111</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-<span class="mark"><span class="literal">0</span>o</span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
+    <div class="code"><span class="mark"><span class="literal">0</span> b </span><span class="literal">111110111</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
+<span class="mark"><span class="literal">0</span> o </span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 </div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-check-circle"></i>
@@ -628,14 +629,14 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <div class="title"><b>ECMAScript 5</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"111110111"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
 <span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"767"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">8</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-<span class="mark"><span class="literal">0</span></span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span><span class="comment"> // only <span class="keyword">in</span> non<span class="punctuation">-</span>strict<span class="punctuation">,</span> backward compatibility mode</span></div>
+<span class="mark"><span class="literal">0</span></span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span><span class="comment"> // modo de compactibilidade com versões anteriores apenas em 'non-strict'.</span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="UnicodeStringRegExpLiteral" class="showcase showcase_UnicodeStringRegExpLiteral">    <div class="title">Extended Literals</div>
-    <div class="subtitle">Unicode String e RegExp Literal</div>
-    <div class="desc">Extended support using Unicode within strings and regular expressions.</div>
+<div id="UnicodeStringRegExpLiteral" class="showcase showcase_UnicodeStringRegExpLiteral">    <div class="title">Literais Extendidos</div>
+    <div class="subtitle">Unicode e RegExp</div>
+    <div class="desc">Suporte estendido usando Unicode dentro de strings e expressões regulares.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; sintaxe: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
     <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
@@ -661,7 +662,7 @@ String<span class="punctuation">.</span>raw <span class="mark"><span class="lite
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="RegularExpressionStickyMatching" class="showcase showcase_RegularExpressionStickyMatching">    <div class="title">Enhanced Regular Expression</div>
+<div id="RegularExpressionStickyMatching" class="showcase showcase_RegularExpressionStickyMatching">    <div class="title">Expressões Regulares Melhoradas</div>
     <div class="subtitle">Regular Expression Sticky Matching</div>
     <div class="desc">Keep the matching position sticky between matches and
 this way support efficient parsing of arbitrary long input strings,
